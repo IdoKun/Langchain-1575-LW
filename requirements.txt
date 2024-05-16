@@ -136,3 +136,6 @@ zipp==3.17.0
 streamlit
 pysqlite3-binary
 chromadb
+langchain
+langchain_community
+langchain_openai
