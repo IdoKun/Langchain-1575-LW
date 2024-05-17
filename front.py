@@ -1,13 +1,5 @@
 import os
-import sys
 import streamlit as st
-
-# Explicitly use pysqlite3 to ensure the correct SQLite version is used
-try:
-    import pysqlite3
-    sys.modules["sqlite3"] = sys.modules["pysqlite3"]
-except ImportError:
-    st.error("pysqlite3 not installed")
 
 from langchain.chains import RetrievalQA
 from langchain_community.document_loaders import TextLoader
